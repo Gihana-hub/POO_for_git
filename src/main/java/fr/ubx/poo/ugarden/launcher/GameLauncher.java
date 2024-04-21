@@ -43,7 +43,7 @@ public class GameLauncher {
 
     public Game load() {
         Properties emptyConfig = new Properties();
-        MapLevel mapLevel = new MapLevelDefault();
+        MapLevel mapLevel = new MapLevelDefaultStart();
         Position gardenerPosition = mapLevel.getGardenerPosition();
         if (gardenerPosition == null)
             throw new RuntimeException("Gardener not found");
